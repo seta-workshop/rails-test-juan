@@ -4,17 +4,17 @@ First of all, thanks a lot for taking the time to do this, we really appreciate 
 
 For your first PR we will ask you to do the following:
 
-- Configure the database (it doesn't matter which one)
+- Configure your local database (it doesn't matter which system you use)
 
-- Create the necessary structures (tables, models, classes, etc) to support projects, with their name, technologies in which are being developed, and when they started, and users which work on them (the user attributes is up to you decide what you want them to have).
+- Create the necessary structures (tables, models, etc) to support **projects**, with their name, when they started and ended, **technologies** in which are being developed, and **users** who work on them (the user attributes is up to you decide what you want them to have).
 
-- Create a controller to allow the creation of a project and to get them all (including their users). **If you have worked with jobs previously** please move the creation code into a job, remove it from the controller. In other words, invoke the job from the controller and return the result.
+- Create a controller to allow the creation and update of a project, allowing to add/change their technologies and users.
 
-- Test **some of the things** that you implemented. Here it doesn't matter what is used to test, and all gems you want to help you can be added to the project.
+- Please add endpoints to mentioned controller to list all projects and to get one in particular with all its information (technologies and users). The endpoint that lists all projects must allow to filter them by a particular technology and/or user. For example: we would like to do things like "return all projects that were built using Ruby on Rails", or "return all projects where John Doe worked", or both of them combined.
 
-- Push the code and create a pull request (or merge request if Gitlab)
+- Push the code and create a pull request on this repo
 
-**NOTE: Bear in mind that there is no right or wrong way to do this (if the concepts are in place and there is a proper justification)**
+**NOTE 1: Bear in mind that there is no right or wrong way to do this (if the concepts are in place and there is a proper justification)**
 
 **NOTE 2: This API responds in JSON format, so the controller actions should return a JSON**
 
