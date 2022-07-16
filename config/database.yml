@@ -1,11 +1,11 @@
 default: &default
-  adapter:
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
-  database: seta-rails-api-dev
+  database: db/development.sqlite3
 
 test:
   <<: *default
