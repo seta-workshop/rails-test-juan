@@ -3,19 +3,19 @@ class ProjectsController < ApplicationController
   # allowing to add/change their technologies and users.
 
   def create
-    @project = Project.new(project_params)
-    @project.save
+    project = Project.create(project_params)
   end
 
   def update
-    @project = Project.find(params[:id])
-    @project.save
+    project = Project.find(params[:id])
+    project.update(project_params)
   end
 
-  def add
+  def add #add technologies and users
+    
   end
 
-  def change
+  def change #change technologies and users
   end
 
   private
